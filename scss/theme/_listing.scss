@@ -1,0 +1,62 @@
+.page-listings {
+    .footer {
+        .menu {
+            &-wrapper {
+                &::before {
+                    content: "";
+                    height: 40px;
+                    background: linear-gradient(to top, #808080, #d4d4d4, transparent);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+.page-listing-detail {
+    .header {
+        &-bar {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 6px;
+                background: linear-gradient(to bottom, rgba(#000, 0.63), transparent);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+.page-listing-share {
+    .listing-title {
+        margin-top: 3px;
+    }
+}
+
+
+.page-listing-map {
+    .header {
+        &-bar {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 6px;
+                background: linear-gradient(to bottom, rgba(#000, 0.63), transparent);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}

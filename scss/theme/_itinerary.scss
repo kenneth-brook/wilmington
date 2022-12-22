@@ -1,0 +1,27 @@
+.page-itinerary {
+    .share-itinerary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 38px;
+        font-size: 10px;
+        font-weight: 600;
+        text-decoration: none !important;
+        color: $white;
+        background-color: $primary;
+        border-radius: 5px;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+
+        &::before {
+            content: "";
+            width: 13px;
+            height: 14px;
+            margin: 1px;
+            background: url(image-url('icon-awesome-share-alt.svg')) center/contain no-repeat;
+        }
+    }
+}

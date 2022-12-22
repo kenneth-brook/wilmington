@@ -1,0 +1,74 @@
+$prefix: "wilm-";
+$body-color: #2d2d2d;
+$font-family-sans-serif: "Segoe UI", sans-serif;
+$font-family-base: "Segoe UI", sans-serif;
+$font-size-root: 16px;
+
+$primary: #005ba8;
+$secondary: #29abe2;
+$border-color: #aaa;
+$link-color: $secondary;
+$link-hover-color: $primary;
+
+// $code-color: false;
+
+$utilities: (
+  "position": (
+    property: position,
+    class: '',
+    values: static relative absolute fixed sticky,
+  ),
+  // "top": (
+  //   property: top,
+  //   values: (
+  //     0: 0,
+  //     50: 50%,
+  //     100: 100%,
+  //   ),
+  // ),
+  "border-top":
+    (
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      ),
+    ),
+  "border-bottom": (
+    property: border-bottom,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+    ),
+  ),
+  "margin-top": (
+    property: margin-top,
+    class: 'mt',
+    values: (
+      0: 0,
+    ),
+  ),
+  "margin-bottom": (
+    property: margin-bottom,
+    class: 'mb',
+    values: (
+      0: 0,
+    ),
+  ),
+  "padding-top": (
+    property: padding-top,
+    class: 'pt',
+    values: (
+      0: 0,
+    ),
+  ),
+  "padding-bottom": (
+    property: padding-bottom,
+    class: 'pb',
+    values: (
+      0: 0,
+    ),
+  )
+);
+
+$header-height: 153px;
+$footer-height: 96px;
+$footer-menu-diameter: 54px;

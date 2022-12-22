@@ -1,0 +1,17 @@
+@function image-url($file: null) {
+    @return if($file !=null, "../images/" + $file, null);
+}
+
+@mixin retina {
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+@mixin inset($offset: 0) {
+    position: absolute;
+    top: $offset;
+    left: $offset;
+    right: $offset;
+    bottom: $offset;
+}

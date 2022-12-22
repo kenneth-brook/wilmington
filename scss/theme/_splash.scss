@@ -1,0 +1,118 @@
+.page-splash {
+    background: url(image-url("splash-img.jpg")) center/cover;
+
+    .header {
+        margin-top: 80px;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 335px;
+        margin-bottom: 17px;
+
+        a {
+            background-image: url(image-url("logo-lg.png"));
+            pointer-events: none;
+
+            @include retina {
+                background-image: url(image-url("logo-lg@2x.png"));
+            }
+        }
+    }
+
+    .title {
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 9px;
+        display: flex;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-indent: 0.6em;
+        letter-spacing: 0.6em;
+        color: #8bc43e;
+
+        &::before,
+        &::after {
+            content: "";
+            flex-grow: 1;
+            align-self: center;
+            height: 1px;
+            background-color: #aaa;
+        }
+    }
+
+    .tagline {
+        font-size: 21px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        color: #29abe2;
+
+        strong {
+            font-weight: 700;
+            color: #67a710;
+        }
+    }
+
+    .description {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.03em;
+        color: $primary;
+    }
+
+    .footer {
+        margin-top: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .enter-button {
+        width: 182px;
+        height: 182px;
+        justify-content: center;
+        display: inline-flex;
+        flex-direction: column;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none !important;
+        color: $white;
+        background-color: rgba($white, 0.83);
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(#003451, 0.6);
+        position: relative;
+        z-index: 1;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        &::before {
+            background-color: $secondary;
+            @include inset(21px);
+        }
+        &::after {
+            border: 3px solid $secondary;
+            @include inset(10px);
+        }
+
+        strong {
+            font-size: 36px;
+            font-weight: inherit;
+            line-height: 30px;
+            letter-spacing: 0.025em;
+        }
+        span {
+            font-size: 28px;
+            letter-spacing: 0.025em;
+        }
+    }
+}
