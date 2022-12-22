@@ -3,7 +3,7 @@ $queries = [];
 parse_str($_SERVER['QUERY_STRING'], $queries);
 
 $datas = [
-    'key' => 'AIzaSyAGefyRhxQki08cpUEvDe4dTBh0N8YGArc',
+    'key' => '',
     'radius' => 1000,
 ];
 if (isset($queries['place'])) {
